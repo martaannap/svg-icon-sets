@@ -1,9 +1,38 @@
 html {
-  font-family: overpass, sans-serif;
+  font-family: Overpass, sans-serif;
   color: #fff;
-  background-image: linear-gradient(to top #ff9500, #ff5e3a);
 }
 
-.icon {
-  color: #fff;
+body {
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
+}
+
+.btn {
+  border-color: #fff;
+  background-color: transparent;
+}
+
+.btn:hover {
+  color: #ff9500;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.unit:nth-child(1),
+.unit:nth-child(2) {
+  border-bottom: 3px solid rgba(255, 255, 255, .8);
+}
+
+@media only screen and (min-width: 60em) {
+
+  .unit:nth-child(1),
+  .unit:nth-child(2) {
+    border-bottom: hidden;
+  }
+
+  .unit:nth-child(2),
+  .unit:nth-child(3) {
+    border-left: 3px solid rgba(255, 255, 255, .8);
+  }
+
 }
